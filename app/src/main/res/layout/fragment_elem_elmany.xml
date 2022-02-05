@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.ElemElmanyFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".ui.fragment.NazaretElAdapFragment">
+
+                <!-- TODO: Update blank fragment layout -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="@string/elem_elmany"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/elem_elmany_go_to_doctor_book"
+
+                    android:layout_margin="8dp"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/doctor_book"
+                    android:textSize="23sp"
+                    app:drawableRightCompat="@drawable/pdficon" />
+
+                <Button
+                    android:layout_margin="8dp"
+
+                    android:id="@+id/elem_elmany_go_to_student_book"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/student_book"
+                    android:textSize="23sp"
+                    app:drawableRightCompat="@drawable/pdficon" />
+
+                <Button
+                    android:layout_margin="8dp"
+                    android:id="@+id/elem_elmany_go_to_lastExams_book"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/last_exams"
+                    android:textSize="23sp"
+                    app:drawableRightCompat="@drawable/pdficon" />
+
+                <Button
+                    android:layout_margin="8dp"
+
+                    android:id="@+id/elem_elmany_lecs"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/lects"
+                    android:textSize="23sp"
+                    app:drawableRightCompat="@drawable/pdficon" />
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+</layout>

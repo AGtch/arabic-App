@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--    01009616592-->
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.EnglishFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="@string/english"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+                <!-- TODO: Update blank fragment layout -->
+
+                <Button
+                    android:id="@+id/english_go_to_doctor_book_id"
+
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/doctor_book"
+                    android:textSize="23sp"
+                    app:drawableRightCompat="@drawable/pdficon" />
+
+                <Button
+                    android:id="@+id/english_go_to_student_book_id"
+
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/student_book"
+                    android:textSize="23sp"
+                    app:drawableRightCompat="@drawable/pdficon" />
+
+                <Button
+                    android:id="@+id/english_go_to_student_book2_id"
+
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/student_book2"
+                    android:textSize="23sp"
+                    app:drawableRightCompat="@drawable/pdficon" />
+
+                <Button
+                    android:id="@+id/english_go_to_lastExam_id"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/last_exams"
+                    android:textSize="23sp"
+                    app:drawableRightCompat="@drawable/pdficon" />
+
+
+                <Button
+                    android:id="@+id/english_lec1_id"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/sentence_structure_lecture_1"
+                    android:textSize="23sp"
+                    app:drawableRightCompat="@drawable/video_icon_24" />
+
+                <Button
+                    android:id="@+id/english_lec2_id"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/lecture2_how_to_write_a_paragraph"
+                    android:textSize="23sp"
+
+                    app:drawableRightCompat="@drawable/video_icon_24" />
+
+                <Button
+                    android:id="@+id/english_quiz1_id"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/quiz_1"
+                    android:textSize="23sp"
+                    app:drawableRightCompat="@drawable/linkicon" />
+
+                <Button
+                    android:id="@+id/english_lec3_0_id"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/presents_res"
+                    android:textSize="23sp"
+                    app:drawableRightCompat="@drawable/video_icon_24" />
+
+                <Button
+                    android:id="@+id/english_lec3_1_id"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/past_res"
+                    android:textSize="23sp"
+                    app:drawableRightCompat="@drawable/video_icon_24" />
+
+                <Button
+                    android:id="@+id/english_lec3_2_id"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:textSize="23sp"
+                    android:text="@string/future_res"
+                    app:drawableRightCompat="@drawable/video_icon_24" />
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </FrameLayout>
+</layout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="26dp"
+        tools:context=".ui.fragment.SemesterFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <Button
+            android:id="@+id/btn_first_semester_id"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/regular"
+            android:text="الفصل الدراسي الاول"
+            android:textSize="29sp" />
+
+        <Button
+            android:id="@+id/btn_sec_semester_id"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="360dp"
+            android:fontFamily="@font/regular"
+            android:text="الفصل الدراسي الثاني"
+
+            android:textSize="30sp" />
+
+
+    </FrameLayout>
+</layout>

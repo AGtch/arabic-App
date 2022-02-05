@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.NazaretElAdapFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+               >
+
+                <!-- TODO: Update blank fragment layout -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="@string/nazaret"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_margin="8dp"
+
+                    android:id="@+id/nazertElAdap_go_to_doctor_book"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/doctor_book"
+                    android:textSize="23sp"
+                    app:drawableRightCompat="@drawable/pdficon" />
+
+                <Button
+                    android:layout_margin="8dp"
+
+                    android:id="@+id/nazertElAdap_go_to_student_book"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/student_book"
+                    android:textSize="25sp"
+                    app:drawableRightCompat="@drawable/pdficon" />
+
+                <Button
+                    android:layout_margin="8dp"
+
+                    android:id="@+id/nazertElAdap_go_to_lastExams_book"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:padding="20dp"
+                    android:text="@string/last_exams"
+                    android:textSize="25sp"
+                    app:drawableRightCompat="@drawable/pdficon" />
+
+                <Button
+                    android:layout_margin="8dp"
+
+                    android:id="@+id/nazertElAdap_lec1"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/intro_to_adap"
+                    android:textSize="25sp"
+                    app:drawableRightCompat="@drawable/linkicon" />
+
+                <Button
+                    android:id="@+id/nazertElAdap_lec2"
+                    android:layout_margin="8dp"
+
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/tasess"
+
+                    android:textSize="25sp"
+                    app:drawableRightCompat="@drawable/linkicon" />
+
+
+                <Button
+                    android:layout_margin="8dp"
+
+                    android:id="@+id/nazertElAdap_lec3"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/namozeg"
+                    android:textSize="25sp"
+
+                    app:drawableRightCompat="@drawable/linkicon" />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </FrameLayout>
+</layout>

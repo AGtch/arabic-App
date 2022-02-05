@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:context=".ui.main.MainActivity">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:contentDescription="لغه الضاد"
+                android:src="@drawable/main_image_dadd" />
+
+            <Button
+                android:id="@+id/first_level_btn"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/regular"
+                android:text="الفرقه الاولي"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/sec_level_btn"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/regular"
+                android:text="الفرقه الثانيه"
+
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/third_level_btn"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/regular"
+                android:text="الفرقه الثالثه"
+
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/fourth_level_btn"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/regular"
+                android:text="الفرقه الرابعه"
+
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

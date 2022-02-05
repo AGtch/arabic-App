@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.fragment.subjectsFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+               >
+                <!-- TODO: Update blank fragment layout -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/regular"
+                    android:text="المواد 6"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_nahw3_id"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/regular"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:gravity="right"
+                    android:hapticFeedbackEnabled="true"
+                    android:text="النحو والصرف"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_nazaret_adap3_id"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/regular"
+                    android:gravity="right"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:hapticFeedbackEnabled="true"
+                    android:text="نظريه الادب"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_elmaane_id"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/regular"
+                    android:gravity="right"
+                    android:hapticFeedbackEnabled="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="علم المعاني"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_adab_id"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/regular"
+                    android:gravity="right"
+                    android:hapticFeedbackEnabled="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:text="ادب مصر الاسلاميه"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_shar_id"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/regular"
+                    android:gravity="right"
+                    android:hapticFeedbackEnabled="true"
+                    android:text="الشعر العباسي"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/btn_english3_id"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/regular"
+                    android:gravity="right"
+                    android:hapticFeedbackEnabled="true"
+                    android:text="اللغه الانجليزيه"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

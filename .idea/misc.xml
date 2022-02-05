@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Project arabic/v2/app/src/main/res/font/font.xml" value="0.1" />
+        <entry key="..\:/Project arabic/v2/app/src/main/res/layout/activity_base.xml" value="0.10989583333333333" />
+        <entry key="..\:/Project arabic/v2/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Project arabic/v2/app/src/main/res/layout/activity_subjects_fragment.xml" value="0.2390625" />
+        <entry key="..\:/Project arabic/v2/app/src/main/res/layout/fragment_nahw3.xml" value="0.2" />
+        <entry key="..\:/Project arabic/v2/app/src/main/res/layout/fragment_pdf_viewer.xml" value="0.22760416666666666" />
+        <entry key="..\:/Project arabic/v2/app/src/main/res/layout/fragment_semester.xml" value="0.22760416666666666" />
+        <entry key="..\:/Project arabic/v2/app/src/main/res/layout/fragment_subjects.xml" value="0.2390625" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_adap_masry.xml" value="0.2" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_elem_elmany.xml" value="0.22760416666666666" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_english.xml" value="0.18683197947840957" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_nahw3.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_nazaret_el_adap.xml" value="0.22760416666666666" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_pdf_viewer.xml" value="0.1" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_semester.xml" value="0.22760416666666666" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_shir_apadsy.xml" value="0.17528858486532706" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_subjects.xml" value="0.22760416666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
