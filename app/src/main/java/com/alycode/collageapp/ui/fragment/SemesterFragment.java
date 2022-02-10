@@ -80,7 +80,7 @@ public class SemesterFragment extends Fragment implements ReplaceFragments {
         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.setReorderingAllowed(true);
-
+        transaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
 // Replace whatever is in the fragment_container view with this fragment
         transaction.replace(R.id.fragment_container_view, fragment);
         transaction.addToBackStack(null);

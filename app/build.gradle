@@ -37,21 +37,13 @@ android {
 dependencies {
     implementation 'com.google.firebase:firebase-storage:20.0.0'
     implementation 'com.google.firebase:firebase-firestore:24.0.1'
-    testImplementation 'org.junit.jupiter:junit-jupiter'
 
+    testImplementation 'org.junit.jupiter:junit-jupiter'
     testImplementation 'org.testng:testng:7.5'
     apply plugin: 'com.android.application'
     apply plugin: 'com.google.gms.google-services'
     implementation platform('com.google.firebase:firebase-bom:29.0.3')
-    implementation 'com.google.firebase:firebase-analytics'
-    def lifecycle_version = "2.5.0-alpha01"
-    def arch_version = "2.1.0"
-    // ViewModel
-    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
-    // LiveData
-    // implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
-    // Saved state module for ViewModel
-    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+
     // material3
     implementation 'com.google.android.material:material:1.6.0-alpha02'
 

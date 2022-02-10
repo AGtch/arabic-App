@@ -1,24 +1,8 @@
 <resources>
     <string name="app_name">لغه الضاد</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="the_arabic">اللغه العربيه</string>
-    <string name="first_year">الفرقه الاولي</string>
-    <string name="sec_year">الفرقه الثانيه</string>
-    <string name="third_year">الفرقه الثالثه</string>
-    <string name="last_year">الفرقه الرابعه</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="title_activity_play_video2">PlayVideoActivity2</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="adab_masr">أدب مصر الإسلامية</string>
     <string name="doctor_book">كتاب الدكتور</string>
     <string name="student_book">تلخيص الماده</string>
@@ -31,7 +15,6 @@
     <string name="presents_res">شرح كل أزمنة المضارع في الانجليزي</string>
     <string name="past_res">شرح كل أزمنة الماضي في الانجليزي</string>
     <string name="future_res">شرح كل أزمنة المستقبل في الانجليزي</string>
-    <string name="translation_steps">translation steps</string>
     <string name="alet_ebnmalek">الفيه ابن مالك</string>
     <string name="sharh_el_masder">شرح المصدر المؤول</string>
     <string name="naedp">محاضرة نائب الفاعل</string>
@@ -44,21 +27,15 @@
     <string name="test_self">قيم نفسك</string>
     <string name="intro_to_adap">مدخل إلى نظرية الأدب</string>
     <string name="tasess">التأسيسات اللسانية عند دي سوسير</string>
-    <string name="read_this">اقراء هذا</string>
-    <string name="sem2">الفصل الدراسي الثاني</string>
-    <string name="sem1">الفصل الدراسي الاول</string>
     <string name="shar_abassy">الشعر في العصر العباسي</string>
-    <string name="doct1_shar">كتاب الدكتور الجزء الاول</string>
-    <string name="doc2_shar">كتاب الدكتور الجزء الثاني</string>
-    <string name="_6">المواد 6</string>
     <string name="grammer">النحو والصرف</string>
     <string name="nazaret">نظرية الآدب</string>
     <string name="elem_elmany">علم المعاني</string>
-    <string name="shat_abassy">الشعر في العصر العباسي</string>
     <string name="english">لغة إنجليزية</string>
     <string name="minimzedsharh">شرح التصـــــغير</string>
     <string name="namozeg">نموذج الاتصال اللغوي</string>
     <string name="part2">كتاب الدكتور الجزء الثاني</string>
     <string name="part1">كتاب الدكتور الجزء الاول</string>
+    <string name="downloaded">جار التحميل برجاء الانتظار..</string>
 
 </resources>

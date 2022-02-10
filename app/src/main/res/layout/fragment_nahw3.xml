@@ -79,8 +79,8 @@
                 android:clickable="true"
                 android:contextClickable="true"
                 android:focusable="true"
-                android:text="@string/last_exams"
                 android:padding="20dp"
+                android:text="@string/last_exams"
                 android:textSize="25sp"
                 app:drawableRightCompat="@drawable/pdficon" />
 

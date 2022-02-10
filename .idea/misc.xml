@@ -11,6 +11,15 @@
         <entry key="..\:/Project arabic/v2/app/src/main/res/layout/fragment_pdf_viewer.xml" value="0.22760416666666666" />
         <entry key="..\:/Project arabic/v2/app/src/main/res/layout/fragment_semester.xml" value="0.22760416666666666" />
         <entry key="..\:/Project arabic/v2/app/src/main/res/layout/fragment_subjects.xml" value="0.2390625" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2005" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/drawable/icon_splash.xml" value="0.2145" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/drawable/linkicon.xml" value="0.2005" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/drawable/progress_bar.xml" value="0.1" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/drawable/splash_background.xml" value="0.1315" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/drawable/splash_color.xml" value="0.2145" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/activity_base.xml" value="0.18683197947840957" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/activity_splash_screen.xml" value="0.17528858486532706" />
         <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_adap_masry.xml" value="0.2" />
         <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_elem_elmany.xml" value="0.22760416666666666" />
         <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_english.xml" value="0.18683197947840957" />
@@ -19,7 +28,12 @@
         <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_pdf_viewer.xml" value="0.1" />
         <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_semester.xml" value="0.22760416666666666" />
         <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_shir_apadsy.xml" value="0.17528858486532706" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_subject.xml" value="0.18683197947840957" />
         <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/fragment_subjects.xml" value="0.22760416666666666" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/layout/progress_bar.xml" value="0.16" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/mipmap-anydpi-v26/icon_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/MisterX/Desktop/newBranch/Arabic-language-project/app/src/main/res/mipmap-anydpi-v26/icon_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>

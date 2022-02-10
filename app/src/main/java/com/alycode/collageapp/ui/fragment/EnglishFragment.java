@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.alycode.collageapp.FireBaseHandle.FirebaseHandle;
+import com.alycode.collageapp.FireBaseHandle.NetworkHandling;
 import com.alycode.collageapp.R;
 import com.alycode.collageapp.databinding.FragmentEnglishBinding;
 import com.alycode.collageapp.ui.HandleClickOnBooks;
@@ -27,7 +28,8 @@ import com.alycode.collageapp.ui.OpenLinks;
 public class EnglishFragment extends Fragment implements View.OnClickListener {
     IntentFilter filter = new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE);
     FragmentEnglishBinding fragmentEnglishBinding;
-
+    String url;
+    String namePdf;
 
     public EnglishFragment() {
         // Required empty public constructor
@@ -79,9 +81,6 @@ public class EnglishFragment extends Fragment implements View.OnClickListener {
         requireActivity().unregisterReceiver(FirebaseHandle.getFirebaseHandleInstance());
     }
 
-    String url;
-    String namePdf;
-
     @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
@@ -89,49 +88,71 @@ public class EnglishFragment extends Fragment implements View.OnClickListener {
             case R.id.english_go_to_doctor_book_id: {
                 url = "https://firebasestorage.googleapis.com/v0/b/arabic-data-pdf.appspot.com/o/%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%2FEnglish_for_Academic.pdf?alt=media&token=32170135-a213-42f3-b544-aab7177c8401";
                 namePdf = "english book.pdf";
-                HandleClickOnBooks.getHandleClickOnBooksInstance().
-                        buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
-                break;
-            }
-            case R.id.english_go_to_student_book2_id:{
-                url = "https://firebasestorage.googleapis.com/v0/b/arabic-data-pdf.appspot.com/o/%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%2Fenglish%202.pdf?alt=media&token=472a7c2a-b06d-4258-94db-9be09b245ece";
-                namePdf ="english 2.pdf";
-                HandleClickOnBooks.getHandleClickOnBooksInstance().
-                        buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
-                break;
-            }
-            case R.id.english_go_to_student_book_id:{
-                url = "https://firebasestorage.googleapis.com/v0/b/arabic-data-pdf.appspot.com/o/%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%2FEnglish.pdf?alt=media&token=ce49cda1-1df2-44e1-9f5f-22767225e711";
-                namePdf ="English.pdf";
-                HandleClickOnBooks.getHandleClickOnBooksInstance().
-                        buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
-                break;
-            }
-            case R.id.english_go_to_lastExam_id:{
-                Toast.makeText(requireActivity(), "سوف يتم اضافته حين توفره", Toast.LENGTH_SHORT).show();
-                break;
-            } case R.id.english_lec1_id:{
-                url = "https://onedrive.live.com/view.aspx?resid=2603DEFBDEDCE6C3!1089&ithint=file%2cpptx&authkey=!AJpEzK1_XdfZjzg";
-                OpenLinks.getOpenLinksInstance().openLinksMethod(requireContext(), url);
+                if (NetworkHandling.getNetworkHandling().checkConnection(requireContext())) {
+                    HandleClickOnBooks.getHandleClickOnBooksInstance().
+                            buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
+                } else {
+                    MassageDialog.getMassageDialog().showErrorMassage();
+                }
                 break;
 
-            } case R.id.english_lec2_id:{
+            }
+            case R.id.english_go_to_student_book2_id: {
+                url = "https://firebasestorage.googleapis.com/v0/b/arabic-data-pdf.appspot.com/o/%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%2Fenglish%202.pdf?alt=media&token=472a7c2a-b06d-4258-94db-9be09b245ece";
+                namePdf = "english 2.pdf";
+                if (NetworkHandling.getNetworkHandling().checkConnection(requireContext())) {
+                    HandleClickOnBooks.getHandleClickOnBooksInstance().
+                            buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
+                } else {
+                    MassageDialog.getMassageDialog().showErrorMassage();
+                }
+                break;
+
+            }
+            case R.id.english_go_to_student_book_id: {
+                url = "https://firebasestorage.googleapis.com/v0/b/arabic-data-pdf.appspot.com/o/%D8%A7%D9%84%D8%A7%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%2FEnglish.pdf?alt=media&token=ce49cda1-1df2-44e1-9f5f-22767225e711";
+                namePdf = "English.pdf";
+                if (NetworkHandling.getNetworkHandling().checkConnection(requireContext())) {
+                    HandleClickOnBooks.getHandleClickOnBooksInstance().
+                            buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
+                } else {
+                    MassageDialog.getMassageDialog().showErrorMassage();
+                }
+                break;
+
+            }
+            case R.id.english_go_to_lastExam_id: {
+                Toast.makeText(requireActivity(), "سوف يتم اضافته حين توفره", Toast.LENGTH_SHORT).show();
+                break;
+            }
+            case R.id.english_lec1_id: {
+                url = "https://onedrive.live.com/view.aspx?resid=2603DEFBDEDCE6C3!1089&ithint=file%2cpptx&authkey=!AJpEzK1_XdfZjzg";
+                OpenLinks.getOpenLinksInstance().openLinksMethod(requireContext(), url)
+                ;
+                break;
+
+            }
+            case R.id.english_lec2_id: {
                 url = "https://onedrive.live.com/view.aspx?resid=2603DEFBDEDCE6C3!1093&ithint=file%2cpptx&authkey=!ANZezQ6vae8EWYs";
                 OpenLinks.getOpenLinksInstance().openLinksMethod(requireContext(), url);
                 break;
-            } case R.id.english_quiz1_id:{
+            }
+            case R.id.english_quiz1_id: {
                 url = "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAR2kqMlUNU9MOTRNU1U2M0hXV1JSNzIzUEtQTkJMNi4u";
                 OpenLinks.getOpenLinksInstance().openLinksMethod(requireContext(), url);
                 break;
-            } case R.id.english_lec3_0_id:{
+            }
+            case R.id.english_lec3_0_id: {
                 url = "https://youtu.be/lxnbZDJAuIw";
                 OpenLinks.getOpenLinksInstance().openLinksMethod(requireContext(), url);
                 break;
-            } case R.id.english_lec3_1_id:{
+            }
+            case R.id.english_lec3_1_id: {
                 url = "https://youtu.be/gU0V4Y5BMFs";
                 OpenLinks.getOpenLinksInstance().openLinksMethod(requireContext(), url);
                 break;
-            }case R.id.english_lec3_2_id: {
+            }
+            case R.id.english_lec3_2_id: {
                 url = "https://youtu.be/Yo5ztWpEApw";
                 OpenLinks.getOpenLinksInstance().openLinksMethod(requireContext(), url);
                 break;

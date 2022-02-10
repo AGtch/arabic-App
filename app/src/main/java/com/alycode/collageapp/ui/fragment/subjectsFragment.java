@@ -71,6 +71,7 @@ public class subjectsFragment extends Fragment implements View.OnClickListener, 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         fragmentSubjectsBinding.btnNahw3Id.setOnClickListener(this);
         fragmentSubjectsBinding.btnNazaretAdap3Id.setOnClickListener(this);
         fragmentSubjectsBinding.btnElmaaneId.setOnClickListener(this);
@@ -83,6 +84,7 @@ public class subjectsFragment extends Fragment implements View.OnClickListener, 
     @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View view) {
+
         switch (view.getId()) {
             case R.id.btn_nahw3_id: {
                 replaceFragment(Nahw3Fragment.newInstance());

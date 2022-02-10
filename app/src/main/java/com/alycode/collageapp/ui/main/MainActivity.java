@@ -1,8 +1,10 @@
 package com.alycode.collageapp.ui.main;
 
 import android.annotation.SuppressLint;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
+import android.transition.ChangeBounds;
 import android.view.View;
 import android.widget.Toast;
 
@@ -22,6 +24,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mainBinding.secLevelBtn.setOnClickListener(this);
         mainBinding.thirdLevelBtn.setOnClickListener(this);
         mainBinding.fourthLevelBtn.setOnClickListener(this);
+        // inside your activity (if you did not enable transitions in your theme)
+
+// set an exit transition
+        getWindow().setExitTransition(new ChangeBounds());
     }
 
     @SuppressLint("NonConstantResourceId")
@@ -36,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.third_level_btn: {
                 Intent intent = new Intent(MainActivity.this, BaseActivity.class);
-                startActivity(intent);
+                startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
                 break;
             }
         }

@@ -27,11 +27,12 @@ import com.alycode.collageapp.ui.HandleClickOnBooks;
 public class ElemElmanyFragment extends Fragment implements View.OnClickListener {
     FragmentElemElmanyBinding fragmentElemElmanyBinding;
     IntentFilter filter = new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE);
+    String url = null;
+    String namePdf = null;
 
     public ElemElmanyFragment() {
         // Required empty public constructor
     }
-
 
     public static ElemElmanyFragment newInstance() {
         ElemElmanyFragment fragment = new ElemElmanyFragment();
@@ -64,9 +65,6 @@ public class ElemElmanyFragment extends Fragment implements View.OnClickListener
         fragmentElemElmanyBinding.elemElmanyGoToLastExamsBook.setOnClickListener(this);
         fragmentElemElmanyBinding.elemElmanyLecs.setOnClickListener(this);
     }
-
-    String url = null;
-    String namePdf = null;
 
     @SuppressLint("NonConstantResourceId")
     @Override

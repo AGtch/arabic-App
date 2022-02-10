@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.alycode.collageapp.FireBaseHandle.FirebaseHandle;
+import com.alycode.collageapp.FireBaseHandle.NetworkHandling;
 import com.alycode.collageapp.R;
 import com.alycode.collageapp.databinding.FragmentShirApadsyBinding;
 import com.alycode.collageapp.ui.HandleClickOnBooks;
@@ -25,11 +26,12 @@ import com.alycode.collageapp.ui.HandleClickOnBooks;
 public class ShirApadsyFragment extends Fragment implements View.OnClickListener {
     FragmentShirApadsyBinding fragmentShirApadsyBinding;
     IntentFilter filter = new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE);
+    String namePdf;
+    String url;
 
     public ShirApadsyFragment() {
         // Required empty public constructor
     }
-
 
     public static ShirApadsyFragment newInstance() {
         ShirApadsyFragment fragment = new ShirApadsyFragment();
@@ -52,9 +54,6 @@ public class ShirApadsyFragment extends Fragment implements View.OnClickListener
         return fragmentShirApadsyBinding.getRoot();
     }
 
-    String namePdf;
-    String url;
-
     @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View view) {
@@ -62,23 +61,38 @@ public class ShirApadsyFragment extends Fragment implements View.OnClickListener
             case R.id.shar_abaasy_go_to_doctor_book_id: {
                 url = "https://firebasestorage.googleapis.com/v0/b/arabic-data-pdf.appspot.com/o/%D8%A7%D9%84%D8%B4%D8%B9%D8%B1%20%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D8%B3%D9%8A%2F%D8%A7%D9%84%D8%B4%D8%B9%D8%B1%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B9%D8%B5%D8%B1%20%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D8%B3%D9%8A%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%D8%A7%D9%84%D8%A7%D9%88%D9%841.pdf?alt=media&token=2739580c-1a4c-4aa5-9413-d77840e8a884";
                 namePdf = "الشعر في العصر العباسي الجزء الاول1.pdf";
-                HandleClickOnBooks.getHandleClickOnBooksInstance().
-                        buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
+                if (NetworkHandling.getNetworkHandling().checkConnection(requireContext())) {
+                    HandleClickOnBooks.getHandleClickOnBooksInstance().
+                            buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
+                } else {
+                    MassageDialog.getMassageDialog().showErrorMassage();
+                }
                 break;
+
             }
             case R.id.shar_abaasy_go_to_doctor_book2_id: {
                 url = "https://firebasestorage.googleapis.com/v0/b/arabic-data-pdf.appspot.com/o/%D8%A7%D9%84%D8%B4%D8%B9%D8%B1%20%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D8%B3%D9%8A%2F%D8%A7%D9%84%D8%B4%D8%B9%D8%B1%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B9%D8%B5%D8%B1%20%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D8%B3%D9%8A%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A1%20%D8%A7%D9%84%D8%A7%D9%88%D9%842.pdf?alt=media&token=7ddcfce0-ba40-4af9-a669-7e44c2e18c47";
                 namePdf = "الشعر في العصر العباسي الجزء الاول2.pdf";
-                HandleClickOnBooks.getHandleClickOnBooksInstance().
-                        buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
+                if (NetworkHandling.getNetworkHandling().checkConnection(requireContext())) {
+                    HandleClickOnBooks.getHandleClickOnBooksInstance().
+                            buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
+                } else {
+                    MassageDialog.getMassageDialog().showErrorMassage();
+                }
                 break;
+
             }
             case R.id.shar_abaasy_go_to_student_book_id: {
-                url="https://firebasestorage.googleapis.com/v0/b/arabic-data-pdf.appspot.com/o/%D8%A7%D9%84%D8%B4%D8%B9%D8%B1%20%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D8%B3%D9%8A%2F%D8%A7%D9%84%D8%B4%D8%B9%D8%B1%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B9%D8%B5%D8%B1%20%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D8%B3%D9%8A-%D8%AA%D9%84%D8%AE%D9%8A%D8%B5.pdf?alt=media&token=3ee6bbf0-328e-487b-b2ee-017d5aab454d";
+                url = "https://firebasestorage.googleapis.com/v0/b/arabic-data-pdf.appspot.com/o/%D8%A7%D9%84%D8%B4%D8%B9%D8%B1%20%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D8%B3%D9%8A%2F%D8%A7%D9%84%D8%B4%D8%B9%D8%B1%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B9%D8%B5%D8%B1%20%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D8%B3%D9%8A-%D8%AA%D9%84%D8%AE%D9%8A%D8%B5.pdf?alt=media&token=3ee6bbf0-328e-487b-b2ee-017d5aab454d";
                 namePdf = "الشعر في العصر العباسي-تلخيص.pdf";
-                HandleClickOnBooks.getHandleClickOnBooksInstance().
-                        buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
+                if (NetworkHandling.getNetworkHandling().checkConnection(requireContext())) {
+                    HandleClickOnBooks.getHandleClickOnBooksInstance().
+                            buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
+                } else {
+                    MassageDialog.getMassageDialog().showErrorMassage();
+                }
                 break;
+
             }
 
         }
@@ -106,7 +120,6 @@ public class ShirApadsyFragment extends Fragment implements View.OnClickListener
         fragmentShirApadsyBinding.sharAbaasyGoToStudentBookId.setOnClickListener(this);
         fragmentShirApadsyBinding.sharAbaasyGoToDoctorBook2Id.setOnClickListener(this);
         fragmentShirApadsyBinding.sharAbaasyGoToDoctorBookId.setOnClickListener(this);
-
 
     }
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/splash_color" />
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/icon_splash" />
+        <scale
+            android:duration="500"
+            android:fromXScale="1.0"
+            android:fromYScale="1.0"
+            android:toXScale="1.0"
+            android:interpolator="@transition/tran_anim"
+            android:toYScale="0.0" />
+    </item>
+</layer-list>

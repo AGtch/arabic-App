@@ -37,10 +37,10 @@
                 <Button
                     android:id="@+id/elem_elmany_go_to_doctor_book"
 
-                    android:layout_margin="8dp"
                     style="@style/Widget.Material3.Button.OutlinedButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="8dp"
                     android:clickable="true"
                     android:contextClickable="true"
                     android:focusable="true"
@@ -50,12 +50,12 @@
                     app:drawableRightCompat="@drawable/pdficon" />
 
                 <Button
-                    android:layout_margin="8dp"
-
                     android:id="@+id/elem_elmany_go_to_student_book"
+
                     style="@style/Widget.Material3.Button.OutlinedButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="8dp"
                     android:clickable="true"
                     android:contextClickable="true"
                     android:focusable="true"
@@ -65,11 +65,11 @@
                     app:drawableRightCompat="@drawable/pdficon" />
 
                 <Button
-                    android:layout_margin="8dp"
                     android:id="@+id/elem_elmany_go_to_lastExams_book"
                     style="@style/Widget.Material3.Button.OutlinedButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="8dp"
                     android:clickable="true"
                     android:contextClickable="true"
                     android:focusable="true"
@@ -79,12 +79,12 @@
                     app:drawableRightCompat="@drawable/pdficon" />
 
                 <Button
-                    android:layout_margin="8dp"
-
                     android:id="@+id/elem_elmany_lecs"
+
                     style="@style/Widget.Material3.Button.OutlinedButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="8dp"
                     android:clickable="true"
                     android:contextClickable="true"
                     android:focusable="true"

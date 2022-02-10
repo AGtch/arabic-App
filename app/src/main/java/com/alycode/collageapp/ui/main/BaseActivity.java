@@ -22,12 +22,10 @@ public class BaseActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .setReorderingAllowed(true)
+                    .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
                     .add(R.id.fragment_container_view, SemesterFragment.class, null)
                     .commit();
         }
 
-
     }
-
-
 }

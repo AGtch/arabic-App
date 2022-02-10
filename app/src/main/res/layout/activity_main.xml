@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="220dp"
                 android:contentDescription="لغه الضاد"
-                android:src="@drawable/main_image_dadd" />
+                android:src="@drawable/app_icon" />
 
             <Button
                 android:id="@+id/first_level_btn"

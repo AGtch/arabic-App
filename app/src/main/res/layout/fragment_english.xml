@@ -175,8 +175,8 @@
                     android:contextClickable="true"
                     android:focusable="true"
                     android:fontFamily="@font/regular"
-                    android:textSize="23sp"
                     android:text="@string/future_res"
+                    android:textSize="23sp"
                     app:drawableRightCompat="@drawable/video_icon_24" />
 
 

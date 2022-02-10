@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.alycode.collageapp.FireBaseHandle.FirebaseHandle;
+import com.alycode.collageapp.FireBaseHandle.NetworkHandling;
 import com.alycode.collageapp.R;
 import com.alycode.collageapp.databinding.FragmentNahw3Binding;
 import com.alycode.collageapp.ui.HandleClickOnBooks;
@@ -28,6 +29,8 @@ public class Nahw3Fragment extends Fragment implements View.OnClickListener {
 
     FragmentNahw3Binding fragmentNahw3Binding;
     IntentFilter filter = new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE);
+    String url;
+    String namePdf;
 
     public Nahw3Fragment() {
         // Required empty public constructor
@@ -52,9 +55,6 @@ public class Nahw3Fragment extends Fragment implements View.OnClickListener {
         super.onCreate(savedInstanceState);
     }
 
-    String url;
-    String namePdf;
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -77,8 +77,12 @@ public class Nahw3Fragment extends Fragment implements View.OnClickListener {
             case R.id.nahw3_go_to_doctor_book: {
                 url = "https://firebasestorage.googleapis.com/v0/b/arabic-data-pdf.appspot.com/o/%D9%86%D8%AD%D9%88%2F%D9%86%D8%AD%D9%88%20%D9%88%D8%B5%D8%B1%D9%81%20%D8%A7%D9%84%D9%81%D8%B1%D9%82%D9%87%20%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D9%87.pdf?alt=media&token=da499286-1483-44a7-b6c8-af5fe38a052f";
                 namePdf = "نحو وصرف الفرقه الثالثه.pdf";
-                HandleClickOnBooks.getHandleClickOnBooksInstance().
-                        buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
+                if (NetworkHandling.getNetworkHandling().checkConnection(requireContext())) {
+                    HandleClickOnBooks.getHandleClickOnBooksInstance().
+                            buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
+                } else {
+                    MassageDialog.getMassageDialog().showErrorMassage();
+                }
                 break;
             }
             case R.id.nahw3_go_to_student_book: {
@@ -88,16 +92,24 @@ public class Nahw3Fragment extends Fragment implements View.OnClickListener {
             case R.id.nahw3_go_to_alfetAbnMalk1_book: {
                 url = "https://firebasestorage.googleapis.com/v0/b/arabic-data-pdf.appspot.com/o/%D9%86%D8%AD%D9%88%2F%D8%A7%D9%84%D9%81%D9%8A%D9%87%20%D8%A7%D8%A8%D9%86%20%D9%85%D8%A7%D9%84%D9%83%20%D9%85%D9%86%20%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-33-109.pdf?alt=media&token=084c3df5-9797-4c53-8833-4e2a2fa4612a";
                 namePdf = "الفيه ابن مالك من البيت-33-109.pdf";
-                HandleClickOnBooks.getHandleClickOnBooksInstance().
-                        buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
+                if (NetworkHandling.getNetworkHandling().checkConnection(requireContext())) {
+                    HandleClickOnBooks.getHandleClickOnBooksInstance().
+                            buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
+                } else {
+                    MassageDialog.getMassageDialog().showErrorMassage();
+                }
                 break;
             }
             case R.id.nahw3_go_to_lastExams_book: {
                 url = "https://firebasestorage.googleapis.com/v0/b/arabic-data-pdf.appspot.com/o/%D9%86%D8%AD%D9%88%2F%D8%A7%D9%85%D8%AA%D8%AD%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D9%86%D8%AD%D9%88%20%D8%A7%D9%84%D8%B3%D8%A7%D8%A8%D9%82%D9%87.pdf?alt=media&token=a8d01c77-6a68-400b-92b8-74a1697c1add";
 
                 namePdf = "امتحانات النحو السابقه.pdf";
-                HandleClickOnBooks.getHandleClickOnBooksInstance().
-                        buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
+                if (NetworkHandling.getNetworkHandling().checkConnection(requireContext())) {
+                    HandleClickOnBooks.getHandleClickOnBooksInstance().
+                            buttonClickedToDownloadOrOpenPdf(requireActivity().getBaseContext(), namePdf, url);
+                } else {
+                    MassageDialog.getMassageDialog().showErrorMassage();
+                }
                 break;
             }
             case R.id.nahw3_go_to_Sharh_alfetAbnMalk1_book: {

@@ -2,6 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
     <data>
 
     </data>
@@ -36,10 +37,10 @@
                 <Button
                     android:id="@+id/adapt_go_to_doctor_book_id"
 
-                    android:layout_margin="8dp"
                     style="@style/Widget.Material3.Button.OutlinedButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="8dp"
                     android:clickable="true"
                     android:contextClickable="true"
                     android:focusable="true"
@@ -51,10 +52,10 @@
                 <Button
                     android:id="@+id/adapt_go_to_student_book_id"
 
-                    android:layout_margin="8dp"
                     style="@style/Widget.Material3.Button.OutlinedButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="8dp"
                     android:clickable="true"
                     android:contextClickable="true"
                     android:focusable="true"
@@ -67,10 +68,10 @@
                 <Button
                     android:id="@+id/adapt_go_to_last_exams_book_id"
 
-                    android:layout_margin="8dp"
                     style="@style/Widget.Material3.Button.OutlinedButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="8dp"
                     android:clickable="true"
                     android:contextClickable="true"
                     android:focusable="true"
